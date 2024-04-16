@@ -224,7 +224,7 @@ deferred-script {
 
 #main > .inner {
     --padding-horizontal: 5rem;
-    --padding-vertical: 3rem;
+    --padding-vertical: 4rem;
     --spacing: 2.75rem;
     --width: 60rem;
     border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
@@ -851,7 +851,7 @@ div.bg-dark {
 /* FAQ */
 
 #faq-content {
-    width: 100%;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
@@ -1036,7 +1036,31 @@ span.expanded, span.collapsed {
     line-height: 1.1;
 }
 
+.mockup-component {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
 
+
+.mockup-image img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.mockup-card {
+    background-color: #262626;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+}
 
 /* Komponen image mockup */
 
@@ -5483,6 +5507,15 @@ hr.style2:before {
 
 @media (max-width: 736px) {
 
+    #faq-content {
+        width: 100% !important;
+    }
+
+    #point.style11 {
+        font-size: 20px !important;
+        width: 100% !important;
+    }
+
     .icon-title {
         font-size: 22px;
     }
@@ -5493,8 +5526,8 @@ hr.style2:before {
     }
 
     #container17.smooth .wrapper .inner {
-        padding-right: 1.75rem;
-        padding-left: 1.75rem;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
     }
 
     #point ul li p {
