@@ -1013,12 +1013,17 @@ span.expanded, span.collapsed {
     background-color: var(--black-color);
     width: 50px;
     height: 50px;
-    /* margin-bottom: -25px; */
     border-radius: 15px !important;
-    background-size: 50%;
+    padding: 12px 10px 8px;
     position: relative;
     display: block;
     float: left;
+}
+
+.icon-image img {
+    width: 100%;
+    
+    
 }
 
 .icon-text {
@@ -1029,11 +1034,18 @@ span.expanded, span.collapsed {
 }
 
 .icon-title {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 600;
     font-family: var(--font-title);
     margin-bottom: 0 !important;
     line-height: 1.1;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .mockup-component {
@@ -1042,10 +1054,9 @@ span.expanded, span.collapsed {
     margin: 0 auto;
 }
 
-
 .mockup-image img {
     height: auto;
-    max-width: 100%;
+    max-width: 90%;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -1060,6 +1071,17 @@ span.expanded, span.collapsed {
     align-content: flex-start;
     padding: 30px 30px 30px 30px;
     border-radius: 30px 30px 30px 30px;
+}
+
+.mockup-text {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 18px;
+}
+.mockup-text h2 {
+    font-size: 2em;
+    font-weight: 600;
+
 }
 
 /* Komponen image mockup */
@@ -5497,6 +5519,11 @@ hr.style2:before {
 }
 
 @media (max-width: 1024px) {
+
+    .box-icon {
+
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -5506,6 +5533,25 @@ hr.style2:before {
 }
 
 @media (max-width: 736px) {
+
+
+    .mockup-image img {
+        max-width: 100%;
+    }
+    .mockup-component {
+        width: 85%;
+       
+    }
+
+    .mockup-text h2 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .box-icon {
+
+        margin-bottom: 10px;
+    }
 
     #faq-content {
         width: 100% !important;
@@ -5520,10 +5566,7 @@ hr.style2:before {
         font-size: 22px;
     }
 
-    .box-icon {
-
-        margin-bottom: 10px;
-    }
+  
 
     #container17.smooth .wrapper .inner {
         padding-right: 0.4rem;
@@ -8587,9 +8630,9 @@ hr.style2:before {
 
 @media (max-width: 360px) {
     #main > .inner {
-        --padding-horizontal: 1.5rem;
+        /* --padding-horizontal: 1.5rem;
         --padding-vertical: 2.625rem;
-        --spacing: 2.0625rem;
+        --spacing: 2.0625rem; */
     }
 
     #main > .inner > * > .full {
