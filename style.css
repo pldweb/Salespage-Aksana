@@ -1332,14 +1332,19 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     flex-shrink: 1;
     text-align: center;
     width: 100%;
+    color: var(--black-color);
 }
 
-.buttons.style4 .button {
+.buttons.style4 li a:hover .label {
+   color: white ;
+}
+
+.buttons.style4 .button:hover {
     background-color: var(--black-color);
     color: white;
 }
 
-.buttons.style4 .button:hover {
+.buttons.style4 .button {
     background-color: var(--primary-color);
     color: var(--black-color);
 }
@@ -5671,6 +5676,19 @@ span, p, .icon-text, div {
 
 @media (max-width: 736px) {
 
+    .notes-point span {
+        font-size: 22px;
+        padding-top: 4px;
+        padding-right: 6px;
+    }
+
+
+    .notes-point ul li {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
     .discount-image {
    
     margin: 30px auto 0;
@@ -5698,7 +5716,7 @@ span, p, .icon-text, div {
     }
 
     .card-body {
-        text-align: justify;
+        text-align: left;
     }
 
     .icon-side {
@@ -5748,6 +5766,8 @@ span, p, .icon-text, div {
     #point.style11 {
         font-size: 20px !important;
         width: 100% !important;
+        text-align: left;
+        padding: 0 10px;
     }
 
     .icon-title {
@@ -5768,7 +5788,12 @@ span, p, .icon-text, div {
 
     .buttons.style4 li a .label {
 
-        font-size: 100%;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .buttons li a i {
+        font-size: 18px;
     }
 
     .image-mockup img{
@@ -6209,7 +6234,7 @@ span, p, .icon-text, div {
     .buttons.style4 li a {
         letter-spacing: 0.15rem;
         padding-left: calc(0.15rem + 1.875rem);
-        padding: 15px;
+        padding: 15px 27px;
         font-size: 0.875em;
     }
 
@@ -9274,6 +9299,7 @@ span, p, .icon-text, div {
     .pt-row.info {
       font-weight: 200 !important;
       display: block;
+      font-style: italic;
      }
      .pricing-table .pt-title .pt-title-wrap .pt-row {
         margin-top: 0 !important;
@@ -9570,5 +9596,25 @@ span, p, .icon-text, div {
       
            visibility: hidden;
            opacity: 0;
+        }
+    }
+
+
+    @media (min-width: 767px){
+
+        .notes-point ul li{
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+        }
+        .notes-point p {
+            line-height: 1.6;
+            
+        }
+
+        .notes-point span {
+            font-size: 20px;
+            padding-top: 7px;
+            padding-right: 10px;
         }
     }
