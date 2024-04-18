@@ -125,7 +125,6 @@ code {
     font-family: 'Lucida Console', 'Courier New', monospace;
     font-size: 0.9em;
     font-weight: normal;
-    letter-spacing: 0;
     margin: 0 0.25em;
     padding: 0.25em 0.5em;
     text-indent: 0;
@@ -1216,7 +1215,6 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     cursor: default;
     display: flex;
     justify-content: var(--flex-alignment);
-    letter-spacing: 0;
     padding: 0;
 }
 
@@ -1300,15 +1298,18 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     vertical-align: middle;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.15rem;
-    padding-left: calc(0.15rem + 1.875rem);
-    font-size: 0.875em;
+    padding: 0 24px;
+    font-size: 20px;
     font-weight: 700;
-    border-radius: 2.5rem;
+    border-radius: 14px;
     box-shadow: 0rem 0.5rem 0.625rem 0rem rgba(0,0,0,0.141);
     flex-direction: row-reverse;
     justify-content: flex-end;
     transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
 }
 
 .buttons.style4 li a svg {
@@ -1347,6 +1348,20 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     transform: scale(1.1125);
 }
 
+.pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a:hover {
+    /* background-color: var(--black-color);    */
+    transform: scale(1.1125);
+    -webkit-transform: scale(1.1125);
+    -moz-transform: scale(1.1125);
+    -ms-transform: scale(1.1125);
+    -o-transform: scale(1.1125);
+    /* color: white; */
+  }
+
+.last a:hover {
+ 
+}
+
 .buttons.style9 {
     justify-content: center;
     gap: 2rem;
@@ -1363,7 +1378,6 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     vertical-align: middle;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.15rem;
     padding-left: calc(0.15rem + 1.875rem);
     font-size: 0.875em;
     font-weight: 700;
@@ -1425,7 +1439,6 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     vertical-align: middle;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.15rem;
     padding-left: calc(0.15rem + 1.875rem);
     font-size: 0.875em;
     font-weight: 700;
@@ -4758,7 +4771,6 @@ h1.style16 span.p:nth-child(n + 2), h2.style16 span.p:nth-child(n + 2), h3.style
     display: flex;
     flex-wrap: wrap;
     justify-content: var(--flex-alignment);
-    letter-spacing: 0;
     padding: 0;
 }
 
@@ -5367,13 +5379,26 @@ span.expanded, span.collapsed {
 .button-style-arrow span i {
     font-size: 20px;
     position: relative;
-    top: 3px;
+    top: 4px;
+    text-align: center;
+    left: 1.2px;
 }
 
 .button-style-arrow label {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.pt-row.price {
+    font-weight: 600 !important;
+    color: var(--black-color);
+    font-size: 33px !important;
+
+}
+
+.pt-row.price span {
+    font-size: 12px;
 }
 
 /* Icon komponen */
@@ -5487,10 +5512,6 @@ span.expanded, span.collapsed {
     font-weight: 600;
 }
 
-.mockup-text a {
-
-}
-
 .mockup-text {
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
@@ -5500,17 +5521,16 @@ span.expanded, span.collapsed {
 }
 
 .mockup-text:hover {
-    transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
+    transform: scale(1.1125);
+    -webkit-transform: scale(1.1125);
+    -moz-transform: scale(1.1125);
+    -ms-transform: scale(1.1125);
+    -o-transform: scale(1.1125);
 }
 
 .mockup-text a:hover {
     color: #292929;
 }
-
 
 h2.mockup-title {
     color: white;
@@ -5567,6 +5587,47 @@ span, p, .icon-text, div {
  }
 
 
+ .notes-card {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0rem 0.5rem 0.625rem 0rem rgba(0,0,0,0.141);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.notes-point p {
+    font-size: 22px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.discount-image {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    width: 86%;
+}
+
+.discount-image img {
+    width: 100%;
+}
+
+.top-zero {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.bottom-zero {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
 
 
 @media (max-width: 1920px) {
@@ -5610,6 +5671,35 @@ span, p, .icon-text, div {
 
 @media (max-width: 736px) {
 
+    .discount-image {
+   
+    margin: 30px auto 0;
+    width: 100%;
+}
+
+    .notes-card {
+    width: 96%;
+    padding: 18px;
+}
+
+    .notes-point p {
+    font-size: 22px;
+    margin-bottom: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+    h2.mockup-title {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 15px 0 20px;
+    }
+
+    .card-body {
+        text-align: justify;
+    }
 
     .icon-side {
         justify-content: space-between;
@@ -5692,7 +5782,7 @@ span, p, .icon-text, div {
     #main > .inner {
         --padding-horizontal: 2rem;
         --padding-vertical: 3.5rem;
-        --spacing: 2.75rem;
+        --spacing: 1.2rem;
     }
 
     #main > .inner > * > .full {
@@ -6023,7 +6113,7 @@ span, p, .icon-text, div {
     h1.style11, h2.style11, h3.style11, p.style11 {
         letter-spacing: 0rem;
         width: 100%;
-        font-size: 1.5em;
+        font-size: 1.6em;
         line-height: 1.25;
     }
 
@@ -9168,14 +9258,41 @@ span, p, .icon-text, div {
     width: 80%;
     align-self: center;
     background-color:  var(--black-color);
-    border-radius: 25px;
+    border-radius: 32px;
     color: white;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
 
+  @media (max-width: 1023px) {
+
+    .pricing-table .pt-title .pt-title-wrap .pt-row:nth-child(2) {
+    margin-top: 17px !important;
+}   
+    .pt-row.info {
+      font-weight: 200 !important;
+      display: block;
+     }
+     .pricing-table .pt-title .pt-title-wrap .pt-row {
+        margin-top: 0 !important;
+     }
+
+     .pricing-table .pt-title .pt-title-wrap .pt-row:first-child {
+    margin-top: 13px;
+     }
   }
 
   @media (max-width: 640px) {
+
+  
+    .pricing-table .pt-title .pt-title-wrap .pt-row:nth-child(2) {
+    margin-top: 0 !important;
+}
+  
     .pricing-table {
-      margin: 60px 0;
+      margin: 60px 0 0;
       width: 100%;
     }
   }
@@ -9184,11 +9301,19 @@ span, p, .icon-text, div {
     flex: 1;
   }
   @media (max-width: 991px) {
+
+    .pricing-table .pt-option {
+        position: relative;
+        flex: 1;
+        color: var(--black-color);
+        padding: 15px 10px !important;
+}
     .pricing-table .pt-title {
-      max-width: 50%;
+      max-width: 50%;   
     }
   }
   .pricing-table .pt-title .pt-title-wrap {
+    margin-top: 30px !important;
     position: relative;
     flex: 1;
     flex-direction: column;
@@ -9211,10 +9336,10 @@ span, p, .icon-text, div {
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
-    min-height: 70px;
+    min-height: 60px;
     padding-left: 27px;
     padding-right: 4px;
-    border-bottom: 1px solid rgba(73, 72, 74, 0.1);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
     text-align: left;
     align-items: flex-start;
   }
@@ -9229,8 +9354,8 @@ span, p, .icon-text, div {
   }
   @media (max-width: 640px) {
     .pricing-table .pt-title .pt-title-wrap .pt-row {
-      padding-left: 20px;
-      padding-right: 15px;
+      padding-left: 14px;
+      padding-right: 14px;
       font-size: 14px;
     }
   }
@@ -9244,6 +9369,7 @@ span, p, .icon-text, div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
   }
   .pricing-table .pt-option {
     position: relative;
@@ -9291,14 +9417,15 @@ span, p, .icon-text, div {
     height: 40px;
     color: #fff;
     border-radius: 50%;
-    background-color: #0061ff;
+    background-color: var(--primary-color);
     transition: 0.25s;
   }
   .pricing-table .pt-option .pt-option-mobile-nav .mobile-nav-btn:hover {
     background-color: var(--primary-color);
   }
   .pricing-table .pt-option .pt-option-mobile-nav .mobile-nav-btn.swiper-button-disabled {
-    background-color: var(--black-color);
+    background-color: #c1c1c1;
+    outline: none;
     pointer-events: none;
   }
   .pricing-table .pt-option .pt-option-mobile-nav .mobile-nav-btn svg {
@@ -9369,7 +9496,7 @@ span, p, .icon-text, div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 70px;
+    min-height: 62.8px;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 20px;
@@ -9388,7 +9515,7 @@ span, p, .icon-text, div {
     border-bottom: 0;
   }
   .pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a {
-    padding: 15px 30px;
+    padding: 12px 32px;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -9397,17 +9524,51 @@ span, p, .icon-text, div {
     background-color: var(--primary-color);
     transition: 0.25s;
   }
-  .pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a:hover {
-    background-color: grey;
-  }
+
   @media (max-width: 576px) {
-    .pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a {
-      padding: 12px 20px;
+    .pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a, .pricing-table .pt-option .pt-option-item .pt-item .pt-row:last-child a {
+        padding: 6px 18px;
+    font-size: 20px;
     }
+    
   }
   @media (max-width: 640px) {
+
+
+    .pricing-table .pt-title .pt-title-wrap {
+         margin-top: 24px !important;
+   
+}
+
+
+    .pt-row.price span {
+    font-size: 12px;
+    display: block;
+}
+
+.pt-row.price p {
+    font-size: 22px;
+}
+     
     .pricing-table .pt-option .pt-option-item .pt-item .pt-row {
-      font-size: 25px;
-      font-weight: 400;
+        font-size: 25px;
+        font-weight: 400;
+        min-height: 60px !important;
+    }
+
+    .pricing-table .pt-option .pt-option-item .pt-item .pt-row:first-child {
+        border-bottom: 0;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 7px;
     }
   }
+
+    @media (min-width: 1024px) {
+
+        .pt-row.info {
+      
+           visibility: hidden;
+           opacity: 0;
+        }
+    }
