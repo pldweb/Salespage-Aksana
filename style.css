@@ -9461,7 +9461,7 @@ span, p, .icon-text, div {
   }
   @media (max-width: 991px) {
     .pricing-table .pt-option .pt-option-slider {
-      overflow-x: scroll;
+      overflow-x: hidden;
     }
   }
   .pricing-table .pt-option .pt-option-item {
