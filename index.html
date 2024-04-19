@@ -9,8 +9,8 @@
     <meta name='format-detection' content='telephone=no'/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="arImaSENMFW2KIMR74Oxq6KwDxvhmWdzqf6e5vtb">
-    <meta name="base-url" content="https://aksana.co.id">
-    <meta name="base-domain" content="aksana.co.id">
+    <meta name="base-url" content="https://salespage.aksana.co.id">
+    <meta name="base-domain" content="salespage.aksana.co.id">
     <meta name="author" content="Baharudin Yusuf Wibowo">
     <meta name="description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda">
     <meta name="keywords" content="sistem wedding organizer, aplikasi wedding organizer, software wedding organizer">
@@ -21,11 +21,11 @@
 
     <meta name="twitter:title" content="Aksana - Sistem Wedding Organizer Terintegrasi &amp; Terlengkap Nomor #1 di Indonesia" />
     <meta name="twitter:description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda" />
-    <meta name="twitter:url" content="https://aksana.co.id" />
+    <meta name="twitter:url" content="https://salespage.aksana.co.id" />
     <meta name="twitter:image" content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg" />
 
     <meta property="og:title" content="Aksana - Sistem Wedding Organizer Terintegrasi &amp; Terlengkap Nomor #1 di Indonesia" />
-    <meta property="og:url" content="https://aksana.co.id" />
+    <meta property="og:url" content="https://salespage.aksana.co.id" />
     <meta property="og:description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:site_name" content="Aksana" />
@@ -52,7 +52,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
      <!-- Favicon -->
-    <link rel="canonical" href="https://aksana.co.id" />
+    <link rel="canonical" href="https://salespage.aksana.co.id" />
     <link rel='icon' href="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/favicon-aksana.png" type='image/x-icon'>
     <link href="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/favicon-aksana.png" rel="apple-touch-icon">
     
@@ -419,13 +419,13 @@
                                     </div>
                                     <div class="pt-option">
                                       <div class="pt-option-mobile-nav">
-                                          <a id="navBtnLeft" href="#" class="mobile-nav-btn" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d9dfdc52bf6b2e83" aria-disabled="true">
+                                          <a id="navBtnLeft" href="#" class="mobile-nav-btn swiper-button-disabled">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M22.1538 11.9819H1.81972" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                                               <path d="M11.9863 22.1535L1.82043 11.9865L11.9863 1.81946" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                           </a>
-                                          <a id="navBtnRight" href="#" class="mobile-nav-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d9dfdc52bf6b2e83" aria-disabled="false">
+                                          <a id="navBtnRight" href="#" class="mobile-nav-btn">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M1.81934 11.9819H22.1534" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                                               <path d="M11.9863 22.1535L22.1522 11.9865L11.9863 1.81946" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -528,32 +528,33 @@
                                 </div>
             
                                   <script>
-                                    var init = false;
-            var pricingCardSwiper;
-            var pricingLoanSwiper
-            function swiperCard() {
-              if (window.innerWidth <= 991) {
-                if (!init) {
-                  init = true;
-                  pricingCardSwiper = new Swiper("#pricingTableSlider", {
-                    slidesPerView: "auto",
-                    spaceBetween: 5,
-                    grabCursor: true,
-                    keyboard: true,
-                    autoHeight: false,
-                    navigation: {
-                      nextEl: "#navBtnRight",
-                      prevEl: "#navBtnLeft",
-                    },
-                  });
-                }
-              } else if (init) {
-                pricingCardSwiper.destroy();
-                init = false;
-              }
-            }
-            swiperCard();
-            window.addEventListener("resize", swiperCard);
+                                  // Pricing table - mobile only slider
+                                        var init = false;
+                                        var pricingCardSwiper;
+                                        var pricingLoanSwiper
+                                        function swiperCard() {
+                                        if (window.innerWidth <= 991) {
+                                            if (!init) {
+                                            init = true;
+                                            pricingCardSwiper = new Swiper("#pricingTableSlider", {
+                                                slidesPerView: "auto",
+                                                spaceBetween: 5,
+                                                grabCursor: true,
+                                                keyboard: true,
+                                                autoHeight: false,
+                                                navigation: {
+                                                nextEl: "#navBtnRight",
+                                                prevEl: "#navBtnLeft",
+                                                },
+                                            });
+                                            }
+                                        } else if (init) {
+                                            pricingCardSwiper.destroy();
+                                            init = false;
+                                        }
+                                        }
+                                        swiperCard();
+                                        window.addEventListener("resize", swiperCard);
                                   </script>
                             </div>
                         </div>
