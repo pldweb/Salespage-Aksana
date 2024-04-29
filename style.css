@@ -9511,7 +9511,7 @@ span, p, .icon-text, div {
 }
 
 .pricing-table .pt-option .pt-option-item .pt-item.recommend {
-    background-color: rgb(220, 160, 28);
+    background-color: var(--primary-color);
     border: 1px solid rgb(121 99 52);
 }
   .pricing-table .pt-option .pt-option-item .pt-item .pt-item-wrap {
