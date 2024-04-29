@@ -5677,22 +5677,33 @@ span, p, .icon-text, div {
 
 @media (max-width: 736px) {
 
-    h2.price-tag {
-        font-size: 23px;
+    .price-top {
+        margin-bottom: 10px !important;
+        margin-top: 0 !important;
+    }
+
+    .price-tag span {
+        margin-top: 0 !important
+        
+    }
+
+    .price-tag span, .price-top {
+        font-size: 20px;
         font-weight: 600;
         
     }
 
-    h2.price-tag span {
-    font-size: 39px;
+    
+    .price-tag {
+    font-size: 47px;
     font-weight: 700;
     color: white;
     position: relative;
-    bottom: -9px;
+    bottom: -3px;
     color: #E90F1D;
 }
 
-        .price-paragraph {
+    .price-paragraph {
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -5702,7 +5713,7 @@ span, p, .icon-text, div {
 }
 
     .notes-point span {
-        font-size: 22px;
+        font-size: 17px;
         padding-top: 4px;
         padding-right: 6px;
     }
@@ -5726,7 +5737,7 @@ span, p, .icon-text, div {
 }
 
     .notes-point p {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 19px;
     font-weight: 500;
     line-height: 1.4;
@@ -9750,4 +9761,14 @@ font-size: 22px;
     font-weight: 600;
     padding: 7px;
     }
+}
+
+
+
+.hightlight {
+
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 0 5px;
+
 }
