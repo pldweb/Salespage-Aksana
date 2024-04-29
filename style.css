@@ -5693,8 +5693,8 @@ span, p, .icon-text, div {
 }
 
         .price-paragraph {
-    margin-bottom: 20px !important;
-    margin-top: 10px !important;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
     .mockup-component .wrap {
