@@ -5677,14 +5677,15 @@ span, p, .icon-text, div {
 
 @media (max-width: 736px) {
 
+
     .price-top {
         margin-bottom: 10px !important;
         margin-top: 0 !important;
     }
 
     .price-tag span {
-        margin-top: 0 !important
-        
+        margin-top: 0 !important;
+        font-size: 20px;
     }
 
     .price-tag span, .price-top {
@@ -9693,10 +9694,6 @@ h2#heading.price {
 
     @media (min-width: 767px){
 
-        
-
-
-
         .notes-point ul li{
             text-align: left;
             display: flex;
@@ -9763,7 +9760,9 @@ font-size: 22px;
     }
 }
 
-
+.style11.bold p{
+    font-weight: 600 !important;
+}
 
 .hightlight {
 
@@ -9771,4 +9770,74 @@ font-size: 22px;
     color: var(--black-color);
     padding: 0 5px;
 
+}
+
+div#container04 {
+    min-height: 25vw;
+}
+
+.price .pricing {
+   
+    color: #E90F1D;
+}
+
+#point.style11.bold {
+    font-weight: 600;
+}
+
+@media (min-width: 767px) {
+
+    .price-paragraph {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+    
+    .price-tag span {
+        margin-top: 0 !important;
+        font-size: 20px;
+    }
+
+    .price-tag span, .price-top {
+        font-size: 24px;
+        font-weight: 600;
+        
+    }
+    .price-tag {
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    bottom: -3px;
+    color: #E90F1D;
+    margin-top: 30px !important
+}
+
+    h1.style12, h2.style12, h3.style12, p.style12 {
+        letter-spacing: -0.05rem;
+        width: 100%;
+        font-size: 2.6em;
+        line-height: 1.4;
+        font-weight: 800;
+   }
+
+   .style5 h2.heading.title {
+    font-size: 22px;
+    font-weight: 600;
+   }
+
+   .style5 #point ul li p {
+    font-size: 22px;
+    font-weight: 500;
+   }
+
+   .style5 #point ul li span {
+    font-size: 24px;
+  }
+
+  h2#heading.price {
+    font-size: 44px;
+   
+   } 
 }
