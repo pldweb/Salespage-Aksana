@@ -9851,4 +9851,5 @@ div#container04 {
     height: 100%;
     opacity: .95;
     background-color: red;
+    display: block;
 }
